@@ -10,4 +10,4 @@
 
 //Console.WriteLine(CupSwagginControl.CupSwapping(new String[] { "BA", "AC", "CA", "BC" }));
 
-Console.WriteLine(NextPrimeControl.NextPrime(20));
+Console.WriteLine(WeekAfterControl.WeekAfter("12/03/2020"));
