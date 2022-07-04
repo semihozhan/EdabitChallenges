@@ -10,4 +10,4 @@
 
 //Console.WriteLine(CupSwagginControl.CupSwapping(new String[] { "BA", "AC", "CA", "BC" }));
 
-Console.WriteLine(NextPriceControl.NextPrime(20));
+Console.WriteLine(NextPrimeControl.NextPrime(20));

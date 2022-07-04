@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Edabit
 {
-    public static class NextPriceControl
+    public static class NextPrimeControl
     {
         static int[] controlPrime = { 2, 3, 5, 7 };
 

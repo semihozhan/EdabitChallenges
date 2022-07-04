@@ -25,12 +25,12 @@ namespace Edabit.Test
         [TestMethod]
         public void NextPrimeControlTest()
         {
-            Assert.AreEqual(NextPriceControl.NextPrime(12),13);
-            Assert.AreEqual(NextPriceControl.NextPrime(24),29);
-            Assert.AreEqual(NextPriceControl.NextPrime(11),11);
-            Assert.AreEqual(NextPriceControl.NextPrime(13),13);
-            Assert.AreEqual(NextPriceControl.NextPrime(14),17);
-            Assert.AreEqual(NextPriceControl.NextPrime(33),37);
+            Assert.AreEqual(NextPrimeControl.NextPrime(12),13);
+            Assert.AreEqual(NextPrimeControl.NextPrime(24),29);
+            Assert.AreEqual(NextPrimeControl.NextPrime(11),11);
+            Assert.AreEqual(NextPrimeControl.NextPrime(13),13);
+            Assert.AreEqual(NextPrimeControl.NextPrime(14),17);
+            Assert.AreEqual(NextPrimeControl.NextPrime(33),37);
         }
     }
 }
