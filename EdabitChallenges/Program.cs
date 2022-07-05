@@ -10,4 +10,6 @@
 
 //Console.WriteLine(CupSwagginControl.CupSwapping(new String[] { "BA", "AC", "CA", "BC" }));
 
-Console.WriteLine(WeekAfterControl.WeekAfter("12/03/2020"));
+RationalNumber rationalNumber = new RationalNumber(1, 0);
+
+Console.WriteLine(rationalNumber.ToString());
