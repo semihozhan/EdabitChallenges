@@ -32,18 +32,21 @@ namespace Edabit
         {
             
             bool controls=false;
+            int num = numerator;
+            int den = denominator;
             for (int i = 0; i < control.Length; i++)
             {
-                if(numerator % control[i]==0 && denominator % control[i]==0)
+                if(num % control[i]==0 && den % control[i]==0)
                 {
-                    denominator = Denominator / control[i];
-                    numerator = Numerator / control[i];
+                    den = den / control[i];
+                    num = num / control[i];
                     controls = true;
                 }
             }
-
-            return controls ? Calc(numerator, denominator) : new int[]{numerator,denominator};
+            return controls ? Calc(num, den) : new int[]{ num, den };
         }
+
+       
     }
 
      

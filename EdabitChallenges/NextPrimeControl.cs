@@ -35,5 +35,79 @@ namespace Edabit
         {
             return Enumerable.Range(0, controlPrime.Length).Any(i => num % controlPrime[i] == 0);
         }
+
+        public static List<int> minimalOperations(List<string> words)
+        {
+            //sddddpeibedjk
+            List<int> result = new List<int>();
+            
+            foreach (var item in words)
+            {
+                int count = 0;
+                char[] rest = item.ToCharArray();
+                char temp = '*';
+                for (int i=0;i<rest.Length-1;i++)
+                {
+                    if (rest[i] == rest[i + 1] && temp!=rest[i])
+                    {
+                        count++;
+                        temp = rest[i];
+                    }
+                    else
+                    {
+                        temp = '*';
+                    }
+                     
+                       
+                }
+                result.Add(count);
+            }
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+
+            return result;
+        }
+
+        public static int minimumSwaps(string brackets)
+        {
+            
+            int leftB = 0,rightB=0;
+            for (int i = 0; i < brackets.Length; i++)
+            {
+                if (brackets[i] == '(') leftB++;
+                else{ rightB++; }
+            }
+            if (rightB != leftB) return -1;
+            brackets = brackets + ")";
+            int count = 0;
+            for (int i = 0; i < brackets.Length-1; i++)
+            {
+                //(()))(
+                if (brackets[i] == '(' && brackets[i+1]!=')') {
+                    count++;
+                    Console.WriteLine(count + " " + brackets[i] + " " + brackets[i + 1]);
+                }
+            }
+
+            return count;
+        }
+
+        public static List<int> reverseArray(List<int> arr)
+        {
+            List<int> result = new List<int>();
+            int[] reversArray = arr.ToArray();
+            var temp = reversArray.Reverse();
+            result = temp.ToList();
+
+            /*foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }*/
+
+            return result;
+        }
     }
 }
