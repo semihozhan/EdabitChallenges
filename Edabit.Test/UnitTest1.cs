@@ -92,9 +92,18 @@ namespace Edabit.Test
         [TestMethod]
         public void WeekAfterControlTest(string input,string expected)
         {
-			var result = WeekAfterControl.WeekAfter(input);
+			//var result = WeekAfterControl.WeekAfter(input);
 
-			Assert.AreEqual(expected, result);
+			//Assert.AreEqual(expected, result);
         }
-    }
+
+
+		[TestMethod]
+		public void DrivingLicenseControlTest()
+		{
+			Assert.AreEqual(DrivingLicenseControl.License("Zebediah", 1, "Bob Jim Becky Pat"), 100);
+			Assert.AreEqual(DrivingLicenseControl.License("Eric", 2, "Adam Caroline Rebecca Frank"), 40);
+			Assert.AreEqual(DrivingLicenseControl.License("Aaron", 3, "Jane Max Olivia Sam"), 20);
+		}
+	}
 }

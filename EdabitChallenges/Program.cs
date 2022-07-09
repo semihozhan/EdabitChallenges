@@ -30,5 +30,5 @@ using System;
 
 
 
-Console.WriteLine(UniqueFractionsControl.UniqueFract());
+Console.WriteLine(DrivingLicenseControl.License("Eric", 2, "Adam Caroline Rebecca Frank"));
 
