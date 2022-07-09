@@ -11,10 +11,10 @@ namespace Edabit
         /// <summary>
         /// https://edabit.com/challenge/HfpK34Ty4SZhN2d9e
         /// </summary>
-        /// <param name="me"></param>
-        /// <param name="agents"></param>
-        /// <param name="others"></param>
-        /// <returns></returns>
+        /// <param name="me">Eric</param>
+        /// <param name="agents">2</param>
+        /// <param name="others">Adam Caroline Rebecca Frank</param>
+        /// <returns>40</returns>
         public static int License(string me, int agents, string others)
         {
             string[] shortArray = stringToArray(me, others);
