@@ -94,7 +94,7 @@ namespace Edabit.Test
         {
 			//var result = WeekAfterControl.WeekAfter(input);
 
-			//Assert.AreEqual(expected, result);
+			//Assert.AreEqual(expected));
         }
 
 
@@ -105,5 +105,23 @@ namespace Edabit.Test
 			Assert.AreEqual(DrivingLicenseControl.License("Eric", 2, "Adam Caroline Rebecca Frank"), 40);
 			Assert.AreEqual(DrivingLicenseControl.License("Aaron", 3, "Jane Max Olivia Sam"), 20);
 		}
+
+		[TestMethod]
+		public void TracktheRobotTest()
+		{
+			Assert.AreEqual(TracktheRobot.TrackRobot("..<.<."), new int[] { 1, 1 });
+			Assert.AreEqual(TracktheRobot.TrackRobot("....................................................................................................") , new int[] { 100, 0 });
+			Assert.AreEqual(TracktheRobot.TrackRobot("<>>>><><<<><>>>><><<<><>>><>"), new int[] { 0, 0 });
+			Assert.AreEqual(TracktheRobot.TrackRobot(".<..<...<....<.....<......"), new int[] { 3, 4 });
+			Assert.AreEqual(TracktheRobot.TrackRobot(">>.."), new int[] { -2, 0 });
+			Assert.AreEqual(TracktheRobot.TrackRobot("..<<..>>..<<..>>.."), new int[] { 2, 0 });
+		}
+
+
+		
+
+
+
+
 	}
 }
