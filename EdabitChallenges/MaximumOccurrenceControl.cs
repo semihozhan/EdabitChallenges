@@ -11,12 +11,10 @@ namespace Edabit
         /// <summary>
         /// https://edabit.com/challenge/vtdfueRCmpRGyLAGs
         /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
+        /// <param name="text">system admin</param>
+        /// <returns>m, s</returns>
         public static string MaxOccur(string text)
         {
-
-            //MaxOccur("system admin") ➞ "m, s"
             List<string> list = new List<string>();
             int temp = 0;
             string result= "No Repetition";
