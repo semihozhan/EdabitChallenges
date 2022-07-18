@@ -30,5 +30,5 @@ using System;
 
 
 
-Console.WriteLine(TracktheRobot.TrackRobot("<>>>><><<<><>>>><><<<><>>><>"));
+Console.WriteLine(MaximumOccurrenceControl.MaxOccur("Edabit"));
 
