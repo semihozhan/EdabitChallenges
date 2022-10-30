@@ -30,5 +30,5 @@ using System;
 
 
 
-Console.WriteLine(MaximumOccurrenceControl.MaxOccur("Edabit"));
+Console.WriteLine(DuplicateCharacters.DuplicateCount("abcde"));
 
