@@ -30,5 +30,5 @@ using System;
 
 
 
-Console.WriteLine(DuplicateCharacters.DuplicateCount("abcde"));
+Console.WriteLine(Bigrams.CanFind(new string[] { "th", "fo", "ma", "or" }, new string[] { "the", "many", "for", "forest" }));
 
