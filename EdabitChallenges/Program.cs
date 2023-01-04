@@ -30,5 +30,5 @@ using System;
 
 
 
-Console.WriteLine(Bigrams.CanFind(new string[] { "th", "fo", "ma", "or" }, new string[] { "the", "many", "for", "forest" }));
+Console.WriteLine(LonelyInteger.CanFindLonely(new int[] { 1, 1, 1, 3, 3, 7 }));
 
